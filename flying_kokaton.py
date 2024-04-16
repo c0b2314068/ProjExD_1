@@ -21,7 +21,7 @@ def main():
         for event in pg.event.get():
             if event.type == pg.QUIT: return
         
-        dx, dy = 0, 0
+        dx, dy = -1, 0
         key_lst = pg.key.get_pressed()
         if key_lst[pg.K_UP]:
             dy += -1
@@ -31,7 +31,7 @@ def main():
             dx += -1
         if key_lst[pg.K_RIGHT]:
             dx += 3
-        pl_img_rec.move_ip(dx-1, dy)
+        pl_img_rec.move_ip(dx, dy)
 
         screen.blit(org_bg_img, [-bg_x, 0])
         screen.blit(flp_bg_img, [-bg_x+1600, 0])
