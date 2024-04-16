@@ -30,7 +30,7 @@ def main():
         if key_lst[pg.K_LEFT]:
             dx += -1
         if key_lst[pg.K_RIGHT]:
-            dx += 2
+            dx += 3
         pl_img_rec.move_ip(dx-1, dy)
 
         screen.blit(org_bg_img, [-bg_x, 0])
